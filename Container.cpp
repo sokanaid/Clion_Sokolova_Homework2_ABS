@@ -25,7 +25,7 @@ void Container::Clear() {
 // Ввод содержимого контейнера из указанного потока
 void Container::In(ifstream &ifst) {
     while (!ifst.eof()) {
-        if ((cont[len] = Transport::StaticIn(ifst)) != 0) {
+        if ((cont[len] = Transport::StaticIn(ifst)) != nullptr) {
             len++;
         }
     }

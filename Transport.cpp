@@ -24,6 +24,8 @@ Transport *Transport::StaticIn(ifstream &ifst) {
         case 3:
             sp = new Plane;
             break;
+        default:
+            return sp;
     }
     sp->In(ifst);
     return sp;

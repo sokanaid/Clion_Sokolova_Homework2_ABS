@@ -25,9 +25,9 @@ void Ship::OutGenTest( ofstream &ofst) {
 
 // Ввод параметров корабля из потока
 void Ship::In( ifstream &ifst) {
-    int type;
-    ifst >> displacement >> type >> speed >> distance;
-    type = (shipType)type;
+    int types;
+    ifst >> displacement >> types >> speed >> distance;
+    type = (shipType)types;
 }
 
 // Случайный ввод параметров корабля
