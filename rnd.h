@@ -8,7 +8,7 @@
 class Random {
 public:
     Random(){
-        srand(static_cast<unsigned int>(time(0)));
+        //srand(static_cast<unsigned int>(time(0)));
     }
     inline auto RandomN() {
         return rand() % 20 + 1;

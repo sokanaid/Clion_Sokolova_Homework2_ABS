@@ -15,11 +15,12 @@ using  namespace  std;
 // структура, обобщающая все имеющиеся транспортные средства
 class Transport {
 protected:
+    Random rnd = Random();
     int speed;
     double distance;
-    Random rnd = Random();
 public:
     virtual ~Transport() {};
+
 
     // Ввод обобщенной фигуры
     static Transport *StaticIn(ifstream &ifdt);

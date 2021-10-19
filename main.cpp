@@ -3,6 +3,8 @@
 #include <cstring>
 #include "Container.h"
 #include <fstream>
+#include <iostream>
+#include "rnd.h"
 void errMessage1() {
     printf("incorrect command line!\n"
            "  Waited:\n"
@@ -59,7 +61,6 @@ int main(int argc, char *argv[]) {
     ofst1 << "Filled Container:\n";
     c.Out(ofst1);
     //c.OutGenTest(ofst1);
-
     // The 2nd part of task
     ofstream ofst2(argv[4]);
     ofst2 << c.ShellSort() << "\n";

@@ -30,6 +30,7 @@ void Plane::In(ifstream &ifst) {
 
 // Случайный ввод параметров самолета
 void Plane::InRnd() {
+    //Random rnd = Random();
     liftingCapacity = rnd.RandomDisplacement();
     flightRange = rnd.RandomDisplacement();
     speed = rnd.RandomSpeed();

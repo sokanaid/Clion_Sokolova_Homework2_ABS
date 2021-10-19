@@ -32,6 +32,7 @@ void Ship::In( ifstream &ifst) {
 
 // Случайный ввод параметров корабля
 void Ship::InRnd() {
+    //Random rnd = Random();
     displacement =rnd.RandomDisplacement();
     type = (shipType)rnd.RandomShipType();
     speed = rnd.RandomSpeed();

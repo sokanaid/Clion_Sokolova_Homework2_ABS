@@ -28,6 +28,7 @@ void Train::In( ifstream &ifst) {
 
 // Случайный ввод параметров поезда
 void Train::InRnd() {
+    //auto rnd = Random();
     numberOfRailwayCarriage = rnd.RandomN();
     speed = rnd.RandomSpeed();
     distance = rnd.RandomDistance();
